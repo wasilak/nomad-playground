@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  become_user: root
+
+  pre_tasks:
+    - name: "Setting /etc/hosts"
+      lineinfile:
+        line: "{{ item }}"
+        path: "/etc/hosts"
+        state: present
+      with_items: "{{ cluster_hosts }}"
+
+  roles:
+    - wasilak.centos-base
+    - wasilak.centos-disable-selinux
+    - wasilak.centos-fabio
