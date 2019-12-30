@@ -9,5 +9,5 @@
 * deploying `hello` app: `nomad run -address=http://192.168.50.4:4646 hello.nomad`
 * test app on: http://192.168.50.3:9999/hello/
 * LB gui: http://192.168.50.3:9998/
-* hashi-ui: http://192.168.50.4:3000
-* consul ui: 192.168.50.4:8500
+* hashi-ui: http://192.168.50.4:3000/
+* consul ui: http://192.168.50.4:8500/
