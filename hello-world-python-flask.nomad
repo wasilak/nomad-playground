@@ -6,7 +6,7 @@ job "hello-world-python-flask" {
     type = "service"
 
     group "application" {
-        count = 4
+        count = 1
 
         meta {
             sherpa_enabled                               = "true"
